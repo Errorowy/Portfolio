@@ -29,14 +29,40 @@
     <title>Portfolio - Errorowy</title>
 
     <style>
-    .navbar-toggler {
-        margin-right: 1.5rem!important;
-    }
-    navbar-nav, a{
-        text-align: center;
-        margin: 0px o !important;
-        padding: 20px !important;
-    }
+
+        .navbar-toggler {
+            margin-right: 1.5rem!important;
+        }
+
+        .navbar-nav, a {
+                text-align: center;
+                padding: 20px !important;
+            }
+
+        @media (max-width: 372px) {
+            .navbar-toggler {
+                display: block;
+                margin: 0 auto !important;
+            }
+
+            .navbar-nav, a {
+                text-align: center;
+                margin: 0px 0 !important;
+                padding: 20px !important;
+            }
+
+            .container-fluid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #navimg {
+                display: block;
+                margin: 0 auto !important;
+            }
+        }
+
     </style>
 
 </head>
@@ -47,18 +73,18 @@
         <div class="container-fluid">
             <img id="navimg" src="LOGO.png" class="ms-3">
             <button
+                id="navbutton"
                 data-mdb-collapse-init
                 class="navbar-toggler fs-1"
                 type="button"
                 data-mdb-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup"
                 aria-expanded="false"
-                aria-label="Toggle navigation"
-                data-mdb-toggle-icon="x">
+                aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto me-5 justify-content-center">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto me-5">
                     <a class="nav-link active mx-3 fw-bold fs-5" aria-current="page" href="#">O Mnie</a>
                     <a class="nav-link mx-3 fw-bold fs-5" href="portfolio/portfolio.html">Portfolio</a>
                     <a class="nav-link mx-3 fw-bold fs-5" href="kontakt/kontakt.html">Kontakt</a>

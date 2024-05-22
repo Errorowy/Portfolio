@@ -25,14 +25,40 @@
     <title>Portfolio - Errorowy</title>
 
     <style>
+
         .navbar-toggler {
             margin-right: 1.5rem!important;
         }
-        navbar-nav, a{
-            text-align: center;
-            margin: 0px o !important;
-            padding: 20px !important;
+
+        .navbar-nav, a {
+                text-align: center;
+                padding: 20px !important;
+            }
+
+        @media (max-width: 372px) {
+            .navbar-toggler {
+                display: block;
+                margin: 0 auto !important;
+            }
+
+            .navbar-nav, a {
+                text-align: center;
+                margin: 0px 0 !important;
+                padding: 20px !important;
+            }
+
+            .container-fluid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #navimg {
+                display: block;
+                margin: 0 auto !important;
+            }
         }
+
     </style>
     
 </head>
