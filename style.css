@@ -27,6 +27,7 @@ h1{
 }
 
 #aboutmetext{
+    text-align: center;
     margin: 0 auto;
     width: 80%;
 }
@@ -47,6 +48,13 @@ h1{
     vertical-align: top;
 }
 
+@media screen and (max-width: 830px){
+    .portfolioitems .card {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
 .portfolioitems .card p {
     font-size: 22px !important;
 }
@@ -58,20 +66,88 @@ h1{
 #contactbox{
     text-align: center;
     margin: 0 auto;
-    width: 800px;
+    width: 85%;
     height: 600px;
 }
 
+@media screen and (max-width: 560px){
+    #contactbox{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 461px){
+    #contactbox{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 429px){
+    #contactbox{
+        font-size: 18px;
+    }
+}
+
+
+
 #contactdata{
-    margin-top: 60px;
-    text-align: left;
+    margin-top: 30px;
+    text-align: center;
+    
+    color: black;
 }
 
 #contactdata div{
-    padding: 10px;
+    padding: 13px;
+}
+
+#contactdata div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 
+
+
+
+
+
+
+
+
+
+.navbar-toggler {
+    margin-right: 1.5rem!important;
+}
+
+.navbar-nav, a {
+        text-align: center;
+        padding: 20px !important;
+    }
+
+@media (max-width: 374px) {
+    .navbar-toggler {
+        display: block;
+        margin: 0 auto !important;
+    }
+
+    .navbar-nav, a {
+        text-align: center;
+        margin: 0px 0 !important;
+        padding: 20px !important;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navimg {
+        display: block;
+        margin: 0 auto !important;
+    }
+}
 
 
 
