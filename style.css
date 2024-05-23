@@ -1,6 +1,11 @@
 body {
     margin: 0;
     background-color: rgba(6, 0, 29, 0.795);
+    overflow: hidden;
+}
+
+.hidden{
+    display: none;
 }
 
 img {
@@ -18,7 +23,7 @@ img {
     width: 100%;
     height: 200dvh;
     font-size: 30px;
-    
+    overflow-y: auto;
 }
 
 h1{
@@ -31,6 +36,26 @@ h1{
     margin: 0 auto;
     width: 80%;
 }
+
+@media screen and (max-width: 999px){
+    #aboutmetext{
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #aboutmetext{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    #aboutmetext{
+        font-size: 20px;
+    }
+}
+
+
 
 .portfolioitems {
     display: block;

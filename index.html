@@ -60,15 +60,18 @@
 
     <div id="content">
         
-        <h1 style="text-align: center;">ZACZNIJMY OD TEGO - KIM JESTEM?</h1>
+        <h1 style="text-align: center;">KIM JESTEM?</h1>
         <br>
         <hr style="margin: 0 auto; width: 60%; border: 5px solid rgb(0, 0, 0); border-radius: 10px;">
         <br>
+        <div id="hiddenDiv" class="hidden">
+            To jest ukryty div!
+        </div>    
         <div id="aboutmetext">
-            <a>Jestem początkującym programistą, który rozbudowywuje swoje portfolio. Uczęszczam do technikum o profilu programista i chętnie podejmuję różnego rodzaju projekty programistyczne, od tworzenia stron internetowych <b style="color: gray">(takich jak ta)</b>, aż po gry komputerowe. Śledzę aktualne trendy i rozwiązania na rynku, więc moje prace nie odbiegają wyglądem i wykonaniem od innych programistów, natomiast za niewielką cenę oferuję jakość oraz współpracę na wysokim poziomie. Zapraszam więc do przejrzenia moich prac oraz kontaktu, a gwarantuję, że znajdziemy idealne rozwiązanie.</a> 
+            <a>Jestem początkującym programistą, który rozbudowywuje swoje portfolio. Uczęszczam do technikum o tym właśnie profilu i chętnie podejmuję różnego rodzaju projekty programistyczne, od tworzenia stron internetowych <b style="color: gray">(takich jak ta)</b>, aż po gry komputerowe. Śledzę aktualne rozwiązania na rynku, więc moje prace są na bieżąco zarówno wyglądem jak i wykonaniem. Zapraszam więc do przejrzenia moich prac oraz kontaktu, a gwarantuję, że znajdziemy idealne rozwiązanie.</a> 
         </div>
 
-
+       
         
         
     </div>
@@ -81,6 +84,17 @@
 
         initMDB({ Collapse });
 
+    </script>
+
+    <script>
+        document.getElementById('showDivButton').addEventListener('click', function() {
+            var hiddenDiv = document.getElementById('hiddenDiv');
+            if (hiddenDiv.classList.contains('hidden')) {
+                hiddenDiv.classList.remove('hidden');
+            } else {
+                hiddenDiv.classList.add('hidden');
+            }
+        });
     </script>
     
 </body>
