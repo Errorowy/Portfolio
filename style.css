@@ -1,7 +1,6 @@
 body {
     margin: 0;
     background-color: rgba(6, 0, 29, 0.795);
-    overflow: hidden;
 }
 
 .hidden{
@@ -23,12 +22,17 @@ img {
     width: 100%;
     height: 200dvh;
     font-size: 30px;
-    overflow-y: auto;
 }
 
 h1{
     font-size: 50px !important;
     margin-top: 40px !important;
+}
+
+@media screen and (max-width: 450px){
+    h1{
+        font-size: 40px !important;
+    }
 }
 
 #aboutmetext{
@@ -75,6 +79,8 @@ h1{
 
 @media screen and (max-width: 830px){
     .portfolioitems .card {
+        display:list-item;
+        list-style-type: none;
         margin: auto;
         margin-bottom: 20px;
     }
